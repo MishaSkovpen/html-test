@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Хочу підписатися!</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 110px;
+            color: #000000;
+        }
+
+        input {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/form/submit" method="post">
+        <div style="border:black; border-width:1px; border-style:outset;">
+            <h2>Хочу підписатися!</h2>
+            <p>Після вашої згоди на підписку вам будуть приходити повідомлення на пошту і телефон</p>
+            <form action="/action_page.php">
+                <label for="name">Ваше ім'я</label><input type="text" id="name" name="name" value="ім'я"><br>
+                <label for="email">Email</label><input type="text" id="email" name="email" value="email@mail.ua"><br>
+                <label for="phone">Телефон</label><input type="text" id="phone" name="phone" value="90991234567"><br>
+                <br>
+                <p>Хочу отримування повідомлення:</p>
+                <input type="checkbox" id="subscribe_email" name="subscribe_email"><label for="subscribe_email">На
+                    пошту</label><br>
+                <input type="checkbox" id="subscribe_phone" name="subscribe_phone"><label for="subscribe_phone">На
+                    телефон</label><br>
+                <br>
+                <input type="submit" value="Підписатися">
+            </form>
+        </div>
+    </form>
+</body>
+
+</html>
